@@ -4,7 +4,7 @@
 #
 Name     : R-pheatmap
 Version  : 1.0.12
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/pheatmap_1.0.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pheatmap_1.0.12.tar.gz
 Summary  : Pretty Heatmaps
