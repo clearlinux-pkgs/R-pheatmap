@@ -4,17 +4,12 @@
 #
 Name     : R-pheatmap
 Version  : 1.0.12
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/pheatmap_1.0.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pheatmap_1.0.12.tar.gz
 Summary  : Pretty Heatmaps
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-RColorBrewer
-Requires: R-Rcpp
-Requires: R-gtable
-Requires: R-munsell
-Requires: R-scales
 BuildRequires : R-RColorBrewer
 BuildRequires : R-Rcpp
 BuildRequires : R-gtable
@@ -33,10 +28,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1546613430
+export SOURCE_DATE_EPOCH=1552877711
 
 %install
-export SOURCE_DATE_EPOCH=1546613430
+export SOURCE_DATE_EPOCH=1552877711
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -72,8 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library pheatmap|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  pheatmap || :
 
 
 %files
