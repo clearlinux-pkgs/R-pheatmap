@@ -1,5 +1,5 @@
 PKG_NAME := R-pheatmap
-URL = https://cran.r-project.org/src/contrib/pheatmap_1.0.12.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/pheatmap_1.0.13.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
